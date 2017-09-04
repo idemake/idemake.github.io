@@ -1,13 +1,319 @@
 <!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="">
 
-<html>
+<title>IDE-Maker - HOME</title>
 
-  <head>
-    <title> IDE-Maker </title>
-  </head>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
 
-  <body>
-    <h1> Hello, IDE-Maker </h1>
-  </body>
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
 
-</html>
+<!-- Custom CSS -->
+<!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="js/jquery-2.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href=""><img src="" srcset="">IDE-Maker: 构建面向特定应用领域的集成开发环境</a>
+      
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://ide.ink/">HOME</a></li>
+        <li><a href="http://ide.ink/">EVENTS</a></li>
+        <li><a href="http://ide.ink/">BLOG</a></li>
+        <li><a href="http://ide.ink/">RSS</a></li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+            <!-- { include header.html %} -->
+
+  <div id="service">
+  <div class="container">
+
+    <div class="row centered" id="service-list">
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 架构微型化 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 特性组件化 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 功能正交化 <a href="http://ide.ink/""><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 业务流程化 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 持续集成 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 模拟工具 <a href="http://dm.tuna.moe/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 自动运维 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="http://ide.ink/"><img class="icon" src="image/gp48px.png"></a>
+        <h4> 信息安全 <a href="http://ide.ink/"><i class="fa fa-hand-o-right"></i></a></h4>
+        <br />
+      </div>
+    </div>
+  </div><!--/container -->
+</div><!--/service -->
+
+
+
+<div id="join-button" class="visible-xs">
+  <div class="container">
+    <div class="row">
+      <div class="btn-group btn-group-justified col-xs-12">
+        <a class="btn btn-large btn-success" href="http://ide.ink/"> IDE-Maker / Join Us </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var today = function() { 
+    var pad = function (number) {
+      var r = String(number);
+      if ( r.length === 1 ) {
+        r = '0' + r;
+      }
+      return r;
+    }
+
+    var _today = new Date();
+    return Date.parse(
+      _today.getFullYear().toString() + "-"
+      + pad(_today.getMonth()+1) + "-"
+      + pad(_today.getDate())
+    );
+
+  }();
+
+  $('#recent-events .event').each(function() {
+    // console.log($(this).attr("data-event-date"));
+    var event_date = Date.parse($(this).attr("data-event-date")),
+        label = "";
+    if (today > event_date) {
+      label = "<span class='label label-info'>Finished</span>";
+    } else {
+      label = "<span class='label label-warning'>Upcoming</span>";
+    }
+    $(this).find(".event-meta").append(label);
+  });
+});
+</script>
+
+<!--
+vim: ts=2 sts=2 sw=2 expandtab
+-->
+
+
+
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>三 个 问 题 </p>
+				<div>
+                <ul class="social">
+                  <li>
+                    如何高效产出产品与服务？
+                  </li>
+
+                  <li>
+                    如何保证质量可测与可信？
+                  </li>
+                  <li>
+                    如何适应快速变化的用户需求和市场环境？
+                  </li>
+
+                </ul>
+              </div>
+				
+				
+            </div>
+
+            <div class="col-sm-4">
+              <p>联 系 我 们</p>
+              <div>
+                <ul class="social">
+                  <li>
+                    <a href="http://ide.ink/"><i class="fa fa-envelope"></i>Mailing List </a>
+                  </li>
+                  <li>
+                    <a href="http://ide.ink/"><i class="fa fa-github"></i>GitHub </a>
+                  </li>
+                  <li>
+                    <a href="http://ide.ink/"><i class="fa fa-weibo"></i>新浪微博</a>
+                  </li>
+                </ul>
+              </div>
+			  
+            </div>
+			
+			<div class="col-sm-4">
+              <p>本 站 维 护</p>
+              <div>
+                <ul class="social">
+                  <li>
+                    <a href="http://ide.ink/"><i class="fa fa-envelope"></i>Email: idemaker@foxmail.com </a>
+                  </li>
+                  <li>
+                    <a href="http://ide.ink/"><i class="fa fa-github"></i>QQ: 1121-6533 </a>
+                  </li>
+
+                </ul>
+              </div>
+			  
+            </div>
+			
+        </div><!-- --/row ---->
+    </div><!-- --/container ---->
+</div><!-- --/footerwrap ---->
+
+<script src="js/retina-1.js"></script>
+<script src="js/jquery_003.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery_004.js"></script>
+<script src="js/jquery_002.js"></script>
+<script src="js/custom.js"></script>
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+
+    
+</body></html>
